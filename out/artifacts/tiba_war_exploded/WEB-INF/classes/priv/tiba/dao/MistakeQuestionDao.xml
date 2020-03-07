@@ -8,7 +8,7 @@
     </insert>
 
     <select id="getMistakeQuestions" parameterType="String" resultType="MistakeQuestion">
-        select * from tbl_mistake_question where userid = #{userId}
+        select * from tbl_mistake_question where userid = #{userId} order by questiondate desc
     </select>
 
     <delete id="deleteMistakeQuestion" parameterType="String">

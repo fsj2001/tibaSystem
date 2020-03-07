@@ -135,7 +135,11 @@ public class Equation {
                     if(this.left1 > 0){
                         left = this.left2 + " + " + holder1;
                     }else{
-                        left = this.left2 + " - " + Math.abs(this.left1) + this.holder;
+                        if(this.left1 == -1){
+                            left = this.left2 + " - " + this.holder;
+                        }else{
+                            left = this.left2 + " - " + Math.abs(this.left1) + this.holder;
+                        }
                     }
                 }
             }else{
@@ -155,7 +159,11 @@ public class Equation {
                     if(this.right1 > 0){
                         right = this.right2 + " + " + holder2;
                     }else{
-                        right = this.right2 + " - " + Math.abs(this.right1) + this.holder;
+                        if(this.right1 == -1){
+                            right = this.right2 + " - " + this.holder;
+                        }else{
+                            right = this.right2 + " - " + Math.abs(this.right1) + this.holder;
+                        }
                     }
                 }
             }else{

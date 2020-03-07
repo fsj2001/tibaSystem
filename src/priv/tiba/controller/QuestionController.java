@@ -37,7 +37,6 @@ public class QuestionController {
     @ResponseBody
     @RequestMapping(value = "/setMistakeQuestion.action", method = RequestMethod.POST)
     public String setMistakeQuestion(@RequestBody Map<String,Object> jsonData, HttpSession session){
-        System.out.println(jsonData);
         List<String> itemList = new ArrayList<>();
         for(Object o : (List<?>) jsonData.get("itemList")){
             itemList.add((String) o);

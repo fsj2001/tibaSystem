@@ -104,7 +104,7 @@ public class QuestionBuilder {
                     n = Integer.parseInt(model.substring(m2.end()-3, m2.end()-2));
                     double doubleNum = intNum + QuestionBuilder.getDoubleNum(n);
                     contentD[cntd++]=doubleNum;
-                    model = model.replaceFirst("\\{d\\(\\d+(_\\d+)?\\.\\d+\\)\\}", String.valueOf(doubleNum));
+                    model = model.replaceFirst("\\{d\\(\\d+(_\\d+)?\\.\\d+\\)\\}", parseDoubleNum(doubleNum, n));
                     m2 = pattern2.matcher(model);
                 }
                 model = model.replaceAll("\n|\r", "");
@@ -131,13 +131,7 @@ public class QuestionBuilder {
                 double result = calculator.calculate(answer);
                 Question question = new Question();
                 question.setTitle(model);
-                switch (leave){
-                    case 0:question.setQuestionKey(String.valueOf((int)result));break;
-                    case 1:question.setQuestionKey(String.format("%.1f", result));break;
-                    case 2:question.setQuestionKey(String.format("%.2f", result));break;
-                    case 3:question.setQuestionKey(String.format("%.3f", result));break;
-                    default:question.setQuestionKey(String.valueOf(result));
-                }
+                question.setQuestionKey(parseDoubleNum(result, leave));
                 question.setType(type);
                 question.setKnowledgePoint(knowledgePoint);
                 if(type.equals("choose")){
@@ -172,15 +166,8 @@ public class QuestionBuilder {
                                 m4 = pattern4.matcher(disContent);
                             }
                             disContent = disContent.replaceAll("\r|\n", "");
-                            System.out.println(disContent);
                             double diskey = calculator.calculate(disContent);
-                            switch (leave2){
-                                case 0:disturbances.add(String.valueOf((int)diskey));break;
-                                case 1:disturbances.add(String.format("%.1f", diskey));break;
-                                case 2:disturbances.add(String.format("%.2f", diskey));break;
-                                case 3:disturbances.add(String.format("%.3f", diskey));break;
-                                default:disturbances.add(String.valueOf(diskey));
-                            }
+                            disturbances.add(parseDoubleNum(diskey, leave2));
                         }
                     }
                     int rightItemIndex = (new Random()).nextInt(disturbances.size()+1);
@@ -220,6 +207,17 @@ public class QuestionBuilder {
         double result = (new Random()).nextInt(10);
         for(int i=0;i<n;i++){
             result /= 10;
+        }
+        return result;
+    }
+    public static String parseDoubleNum(double doubleNum, int leave){
+        String result;
+        switch (leave){
+            case 0:result = String.valueOf((int)doubleNum);break;
+            case 1:result = String.format("%.1f", doubleNum);break;
+            case 2:result = String.format("%.2f", doubleNum);break;
+            case 3:result = String.format("%.3f", doubleNum);break;
+            default:result = String.valueOf(doubleNum);
         }
         return result;
     }

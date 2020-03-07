@@ -25,10 +25,6 @@
       <change afterPath="$PROJECT_DIR$/../../PaperSystem/src/main/webapp/WEB-INF/jsp/addPaper.jsp" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../PaperSystem/src/main/webapp/WEB-INF/jsp/allPaper.jsp" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../PaperSystem/src/main/webapp/WEB-INF/jsp/updatePaper.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/priv/tiba/controller/RecordController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/priv/tiba/dao/RecordDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/priv/tiba/service/RecordService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/priv/tiba/service/impl/RecordServiceImpl.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../hello2/src/main/resources/generator.properties" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../hello2/src/main/resources/generatorConfig.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../hello2/src/main/resources/jdbc.properties" afterDir="false" />
@@ -36,8 +32,45 @@
       <change afterPath="$PROJECT_DIR$/../../hello2/src/main/resources/spring/applicationContext.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/jsp/question.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/jsp/question.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/priv/tiba/dao/RecordDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/priv/tiba/dao/RecordDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/priv/tiba/service/QuestionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/priv/tiba/service/QuestionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/priv/tiba/controller/QuestionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/priv/tiba/controller/QuestionController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/priv/tiba/dao/MistakeQuestionDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/priv/tiba/dao/MistakeQuestionDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/priv/tiba/questionModel/knowledgePoint12_easy/words1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/priv/tiba/questionModel/knowledgePoint12_easy/words1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/priv/tiba/questionModel/knowledgePoint12_normal/words1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/priv/tiba/questionModel/knowledgePoint12_normal/words1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/priv/tiba/questionModel/knowledgePoint12_normal/words2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/priv/tiba/questionModel/knowledgePoint12_normal/words2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/priv/tiba/questionModel/knowledgePoint14_easy/disturbance1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/priv/tiba/questionModel/knowledgePoint14_easy/disturbance1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/priv/tiba/questionModel/knowledgePoint14_easy/words1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/priv/tiba/questionModel/knowledgePoint14_easy/words1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/priv/tiba/questionModel/knowledgePoint14_normal/words2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/priv/tiba/questionModel/knowledgePoint14_normal/words2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/priv/tiba/questionModel/knowledgePoint4_easy/answer1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/priv/tiba/questionModel/knowledgePoint4_easy/answer1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/priv/tiba/questionModel/knowledgePoint4_easy/disturbance1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/priv/tiba/questionModel/knowledgePoint4_easy/disturbance1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/priv/tiba/questionModel/knowledgePoint4_easy/model1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/priv/tiba/questionModel/knowledgePoint4_easy/model1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/priv/tiba/questionModel/knowledgePoint4_easy/words1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/priv/tiba/questionModel/knowledgePoint4_easy/words1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/priv/tiba/tool/Equation.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/priv/tiba/tool/Equation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/priv/tiba/tool/QuestionBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/priv/tiba/tool/QuestionBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/tiba_war_exploded/WEB-INF/classes/priv/tiba/controller/QuestionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/tiba_war_exploded/WEB-INF/classes/priv/tiba/controller/QuestionController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/tiba_war_exploded/WEB-INF/classes/priv/tiba/dao/MistakeQuestionDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/tiba_war_exploded/WEB-INF/classes/priv/tiba/dao/MistakeQuestionDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/tiba_war_exploded/WEB-INF/classes/priv/tiba/questionModel/knowledgePoint12_easy/words1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/tiba_war_exploded/WEB-INF/classes/priv/tiba/questionModel/knowledgePoint12_easy/words1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/tiba_war_exploded/WEB-INF/classes/priv/tiba/questionModel/knowledgePoint12_normal/words1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/tiba_war_exploded/WEB-INF/classes/priv/tiba/questionModel/knowledgePoint12_normal/words1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/tiba_war_exploded/WEB-INF/classes/priv/tiba/questionModel/knowledgePoint12_normal/words2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/tiba_war_exploded/WEB-INF/classes/priv/tiba/questionModel/knowledgePoint12_normal/words2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/tiba_war_exploded/WEB-INF/classes/priv/tiba/questionModel/knowledgePoint14_easy/disturbance1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/tiba_war_exploded/WEB-INF/classes/priv/tiba/questionModel/knowledgePoint14_easy/disturbance1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/tiba_war_exploded/WEB-INF/classes/priv/tiba/questionModel/knowledgePoint14_easy/words1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/tiba_war_exploded/WEB-INF/classes/priv/tiba/questionModel/knowledgePoint14_easy/words1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/tiba_war_exploded/WEB-INF/classes/priv/tiba/questionModel/knowledgePoint14_normal/words2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/tiba_war_exploded/WEB-INF/classes/priv/tiba/questionModel/knowledgePoint14_normal/words2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/tiba_war_exploded/WEB-INF/classes/priv/tiba/questionModel/knowledgePoint4_easy/answer1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/tiba_war_exploded/WEB-INF/classes/priv/tiba/questionModel/knowledgePoint4_easy/answer1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/tiba_war_exploded/WEB-INF/classes/priv/tiba/questionModel/knowledgePoint4_easy/disturbance1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/tiba_war_exploded/WEB-INF/classes/priv/tiba/questionModel/knowledgePoint4_easy/disturbance1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/tiba_war_exploded/WEB-INF/classes/priv/tiba/questionModel/knowledgePoint4_easy/model1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/tiba_war_exploded/WEB-INF/classes/priv/tiba/questionModel/knowledgePoint4_easy/model1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/tiba_war_exploded/WEB-INF/classes/priv/tiba/questionModel/knowledgePoint4_easy/words1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/tiba_war_exploded/WEB-INF/classes/priv/tiba/questionModel/knowledgePoint4_easy/words1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/tiba_war_exploded/WEB-INF/classes/priv/tiba/tool/Equation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/tiba_war_exploded/WEB-INF/classes/priv/tiba/tool/Equation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/tiba_war_exploded/WEB-INF/classes/priv/tiba/tool/QuestionBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/tiba_war_exploded/WEB-INF/classes/priv/tiba/tool/QuestionBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/tiba_war_exploded/WEB-INF/jsp/question.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/tiba_war_exploded/WEB-INF/jsp/question.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/priv/tiba/controller/QuestionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/priv/tiba/controller/QuestionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/priv/tiba/dao/MistakeQuestionDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/priv/tiba/dao/MistakeQuestionDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/priv/tiba/questionModel/knowledgePoint12_easy/words1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/priv/tiba/questionModel/knowledgePoint12_easy/words1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/priv/tiba/questionModel/knowledgePoint12_normal/words1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/priv/tiba/questionModel/knowledgePoint12_normal/words1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/priv/tiba/questionModel/knowledgePoint12_normal/words2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/priv/tiba/questionModel/knowledgePoint12_normal/words2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/priv/tiba/questionModel/knowledgePoint14_easy/disturbance1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/priv/tiba/questionModel/knowledgePoint14_easy/disturbance1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/priv/tiba/questionModel/knowledgePoint14_easy/words1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/priv/tiba/questionModel/knowledgePoint14_easy/words1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/priv/tiba/questionModel/knowledgePoint14_normal/words2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/priv/tiba/questionModel/knowledgePoint14_normal/words2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/priv/tiba/tool/Equation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/priv/tiba/tool/Equation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/priv/tiba/tool/QuestionBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/priv/tiba/tool/QuestionBuilder.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/build/classes/" />
@@ -51,7 +84,57 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/priv/tiba/questionModel/knowledgePoint4_easy/answer1.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="114">
+              <caret line="6" column="11" lean-forward="true" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/priv/tiba/questionModel/knowledgePoint4_easy/words1.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="8" column="14" lean-forward="true" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/priv/tiba/questionModel/knowledgePoint4_easy/model1.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="7" column="45" lean-forward="true" selection-start-line="7" selection-start-column="45" selection-end-line="7" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/priv/tiba/questionModel/knowledgePoint4_easy/disturbance1.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="76">
+              <caret line="4" column="62" lean-forward="true" selection-start-line="4" selection-start-column="62" selection-end-line="4" selection-end-column="62" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/priv/tiba/tool/QuestionBuilder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="287">
+              <caret line="87" column="55" selection-start-line="87" selection-start-column="47" selection-end-line="87" selection-end-column="55" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#getDoubleNum#0;class#QuestionBuilder#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -66,8 +149,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>leave</find>
-      <find>leave2</find>
       <find>holder</find>
       <find>amount</find>
       <find>getword</find>
@@ -96,6 +177,8 @@
       <find>answer</find>
       <find>knowledgepoint</find>
       <find>key</find>
+      <find>parseDoubleNum</find>
+      <find>rightAmount</find>
     </findStrings>
     <replaceStrings>
       <replace>1.1</replace>
@@ -112,13 +195,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/priv/tiba/questionModel/knowledgePoint13_normal/words2.txt" />
-        <option value="$PROJECT_DIR$/src/priv/tiba/questionModel/knowledgePoint13_normal/answer2.txt" />
-        <option value="$PROJECT_DIR$/src/priv/tiba/questionModel/knowledgePoint13_normal/disturbance2.txt" />
         <option value="$PROJECT_DIR$/src/priv/tiba/questionModel/knowledgePoint13_normal/disturbance1.txt" />
-        <option value="$PROJECT_DIR$/src/priv/tiba/questionModel/knowledgePoint14_easy/words1.txt" />
         <option value="$PROJECT_DIR$/src/priv/tiba/questionModel/knowledgePoint14_easy/answer1.txt" />
-        <option value="$PROJECT_DIR$/src/priv/tiba/questionModel/knowledgePoint14_easy/disturbance1.txt" />
         <option value="$PROJECT_DIR$/src/priv/tiba/questionModel/knowledgePoint14_normal/words1.txt" />
         <option value="$PROJECT_DIR$/src/priv/tiba/questionModel/knowledgePoint14_normal/answer1.txt" />
         <option value="$PROJECT_DIR$/src/priv/tiba/questionModel/knowledgePoint14_normal/disturbance1.txt" />
@@ -126,14 +204,8 @@
         <option value="$PROJECT_DIR$/src/priv/tiba/questionModel/knowledgePoint14_normal/answer2.txt" />
         <option value="$PROJECT_DIR$/src/priv/tiba/questionModel/knowledgePoint14_normal/disturbance2.txt" />
         <option value="$PROJECT_DIR$/src/priv/tiba/tool/Calculator.java" />
-        <option value="$PROJECT_DIR$/src/priv/tiba/questionModel/knowledgePoint14_normal/words2.txt" />
-        <option value="$PROJECT_DIR$/src/priv/tiba/tool/Equation.java" />
         <option value="$PROJECT_DIR$/WebContent/tgls/tagTree.html" />
         <option value="$PROJECT_DIR$/src/priv/tiba/questionModel/knowledgePointTransfer.txt" />
-        <option value="$PROJECT_DIR$/src/priv/tiba/questionModel/knowledgePoint4_easy/answer1.txt" />
-        <option value="$PROJECT_DIR$/src/priv/tiba/questionModel/knowledgePoint4_easy/disturbance1.txt" />
-        <option value="$PROJECT_DIR$/src/priv/tiba/questionModel/knowledgePoint4_easy/model1.txt" />
-        <option value="$PROJECT_DIR$/src/priv/tiba/questionModel/knowledgePoint4_easy/words1.txt" />
         <option value="$PROJECT_DIR$/WebContent/css/login.css" />
         <option value="$PROJECT_DIR$/out/artifacts/boot_crm_war_exploded/css/login.css" />
         <option value="$PROJECT_DIR$/WebContent/test.html" />
@@ -143,15 +215,12 @@
         <option value="$PROJECT_DIR$/WebContent/tgls/iconfont.html" />
         <option value="$PROJECT_DIR$/WebContent/WEB-INF/jsp/frame.jsp" />
         <option value="$PROJECT_DIR$/src/priv/tiba/pojo/Question.java" />
-        <option value="$PROJECT_DIR$/src/priv/tiba/tool/QuestionBuilder.java" />
         <option value="$PROJECT_DIR$/src/priv/tiba/pojo/MistakeQuestion.java" />
         <option value="$PROJECT_DIR$/src/priv/tiba/tool/parseKnowledgePoint.java" />
         <option value="$PROJECT_DIR$/src/priv/tiba/controller/UserController.java" />
         <option value="$PROJECT_DIR$/src/priv/tiba/dao/MistakeQuestionDao.java" />
-        <option value="$PROJECT_DIR$/src/priv/tiba/dao/MistakeQuestionDao.xml" />
         <option value="$PROJECT_DIR$/src/priv/tiba/tool/EquationBuilder.java" />
         <option value="$PROJECT_DIR$/src/priv/tiba/service/impl/QuestionServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/priv/tiba/controller/QuestionController.java" />
         <option value="$PROJECT_DIR$/WebContent/tgls/mistakeQuestion.html" />
         <option value="$PROJECT_DIR$/WebContent/WEB-INF/jsp/index.html" />
         <option value="$PROJECT_DIR$/WebContent/WEB-INF/jsp/login.jsp" />
@@ -162,7 +231,21 @@
         <option value="$PROJECT_DIR$/src/priv/tiba/service/QuestionService.java" />
         <option value="$PROJECT_DIR$/src/priv/tiba/service/impl/RecordServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/priv/tiba/controller/RecordController.java" />
+        <option value="$PROJECT_DIR$/src/priv/tiba/tool/Equation.java" />
+        <option value="$PROJECT_DIR$/src/priv/tiba/dao/MistakeQuestionDao.xml" />
+        <option value="$PROJECT_DIR$/src/priv/tiba/questionModel/knowledgePoint12_easy/words1.txt" />
+        <option value="$PROJECT_DIR$/src/priv/tiba/questionModel/knowledgePoint12_normal/words2.txt" />
+        <option value="$PROJECT_DIR$/src/priv/tiba/questionModel/knowledgePoint12_normal/words1.txt" />
+        <option value="$PROJECT_DIR$/src/priv/tiba/questionModel/knowledgePoint14_easy/words1.txt" />
+        <option value="$PROJECT_DIR$/src/priv/tiba/controller/QuestionController.java" />
+        <option value="$PROJECT_DIR$/src/priv/tiba/questionModel/knowledgePoint14_easy/disturbance1.txt" />
         <option value="$PROJECT_DIR$/WebContent/WEB-INF/jsp/question.jsp" />
+        <option value="$PROJECT_DIR$/src/priv/tiba/questionModel/knowledgePoint14_normal/words2.txt" />
+        <option value="$PROJECT_DIR$/src/priv/tiba/tool/QuestionBuilder.java" />
+        <option value="$PROJECT_DIR$/src/priv/tiba/questionModel/knowledgePoint4_easy/model1.txt" />
+        <option value="$PROJECT_DIR$/src/priv/tiba/questionModel/knowledgePoint4_easy/words1.txt" />
+        <option value="$PROJECT_DIR$/src/priv/tiba/questionModel/knowledgePoint4_easy/disturbance1.txt" />
+        <option value="$PROJECT_DIR$/src/priv/tiba/questionModel/knowledgePoint4_easy/answer1.txt" />
       </list>
     </option>
   </component>
@@ -190,8 +273,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-10" />
-    <option name="y" value="39" />
+    <option name="x" value="836" />
+    <option name="y" value="88" />
     <option name="width" value="1008" />
     <option name="height" value="1038" />
   </component>
@@ -235,7 +318,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="priv" type="462c0819:PsiDirectoryNode" />
               <item name="tiba" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="questionModel" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="tibaSystem" type="b2602c69:ProjectViewProjectNode" />
@@ -243,7 +326,8 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="priv" type="462c0819:PsiDirectoryNode" />
               <item name="tiba" type="462c0819:PsiDirectoryNode" />
-              <item name="pojo" type="462c0819:PsiDirectoryNode" />
+              <item name="questionModel" type="462c0819:PsiDirectoryNode" />
+              <item name="knowledgePoint4_easy" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="tibaSystem" type="b2602c69:ProjectViewProjectNode" />
@@ -251,34 +335,12 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="priv" type="462c0819:PsiDirectoryNode" />
               <item name="tiba" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tibaSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tibaSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="priv" type="462c0819:PsiDirectoryNode" />
-              <item name="tiba" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
+              <item name="tool" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="tibaSystem" type="b2602c69:ProjectViewProjectNode" />
               <item name="tibaSystem" type="462c0819:PsiDirectoryNode" />
               <item name="WebContent" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tibaSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tibaSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="WebContent" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tibaSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tibaSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="WebContent" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="jsp" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -582,7 +644,7 @@
       <workItem from="1583205007801" duration="423000" />
       <workItem from="1583291336574" duration="4519000" />
       <workItem from="1583333111917" duration="53889000" />
-      <workItem from="1583509504730" duration="8341000" />
+      <workItem from="1583509504730" duration="17165000" />
     </task>
     <task id="LOCAL-00001" summary="create project">
       <created>1583546827498</created>
@@ -595,12 +657,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="340652000" />
+    <option name="totallyTimeSpent" value="349476000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17750533" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17750533" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -610,7 +673,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.34164858" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.30694142" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2635575" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.38937092" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -643,179 +706,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="create project" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/itheima/core/dao/BaseDictDao.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/itheima/core/dao/CustomerDao.java" />
-    <entry file="file://$PROJECT_DIR$/WebContent/tgls/qdAPI.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-817" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/tgls/tagTree.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="22" column="30" lean-forward="true" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/tgls/base/pages.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/tgls/base/maintain.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-969" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/WEB-INF/jsp/mistakeQuestion1.jsp" />
-    <entry file="file://$PROJECT_DIR$/config/mybatis-config.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/out/artifacts/boot_crm_war_exploded/WEB-INF/jsp/question.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="507" column="32" lean-forward="true" selection-start-line="507" selection-start-column="32" selection-end-line="507" selection-end-column="32" />
-          <folding>
-            <element signature="n#style#0;n#p#0;n#label#0;n#li#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/priv/tiba/questionModel/knowledgePointTransfer.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="73" selection-start-column="68" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/priv/tiba/tool/ParseKnowledgePoint.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="19" lean-forward="true" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/priv/tiba/dao/UserDao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="38" lean-forward="true" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/itheima/core/dao/BaseDictDao.xml" />
-    <entry file="file://$PROJECT_DIR$/src/priv/tiba/dao/MistakeQuestionDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/itheima/core/dao/CustomerDao.xml" />
-    <entry file="jar://$PROJECT_DIR$/WebContent/WEB-INF/lib/spring-web-4.3.6.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="122" selection-start-line="122" selection-end-line="122" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/priv/tiba/tool/QuestionBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1915">
-          <caret line="141" column="57" selection-start-line="141" selection-start-column="43" selection-end-line="141" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#getIntNum#0;class#QuestionBuilder#0" />
-            <element signature="method#getDoubleNum#0;class#QuestionBuilder#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/priv/tiba/tool/EquationBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="18" column="36" lean-forward="true" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/tgls/mistakeQuestion.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="95" column="106" selection-start-line="95" selection-start-column="100" selection-end-line="95" selection-end-column="106" />
-          <folding>
-            <element signature="n#style#0;n#p#0;n#label#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/classes/artifacts/boot_crm_war_exploded/WEB-INF/jsp/login2.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="230" column="37" lean-forward="true" selection-start-line="230" selection-start-column="37" selection-end-line="230" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/WEB-INF/jsp/answer.jsp" />
-    <entry file="file://$PROJECT_DIR$/WebContent/WEB-INF/jsp/frame.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="52" column="110" selection-start-line="52" selection-start-column="110" selection-end-line="52" selection-end-column="110" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/WEB-INF/jsp/modify_password.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/WEB-INF/jsp/notice.jsp" />
-    <entry file="file://$PROJECT_DIR$/WebContent/success.html" />
-    <entry file="file://$PROJECT_DIR$/WebContent/login.jsp" />
-    <entry file="file://$PROJECT_DIR$/WebContent/WEB-INF/jsp/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6099">
-          <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/priv/tiba/interceptor/LoginInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/WEB-INF/jsp/customer.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="34" column="43" selection-start-line="34" selection-start-column="43" selection-end-line="34" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/classes/artifacts/boot_crm_war_exploded/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="55" column="33" selection-start-line="55" selection-start-column="33" selection-end-line="55" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/WEB-INF/jsp/s.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1938" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WebContent/WEB-INF/jsp/login.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
@@ -888,13 +778,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/priv/tiba/dao/MistakeQuestionDao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="51" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/priv/tiba/service/QuestionService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
@@ -928,16 +811,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/priv/tiba/controller/RecordController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="24" column="19" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/priv/tiba/service/RecordService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
@@ -955,30 +828,203 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/WEB-INF/jsp/question.jsp">
+    <entry file="file://$PROJECT_DIR$/src/priv/tiba/controller/RecordController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
-          <caret line="380" column="32" lean-forward="true" selection-start-line="380" selection-start-column="32" selection-end-line="380" selection-end-column="32" />
-          <folding>
-            <element signature="n#style#0;n#p#0;n#label#0;n#li#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/priv/tiba/controller/QuestionController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="45" column="115" selection-start-line="45" selection-start-column="59" selection-end-line="45" selection-end-column="115" />
+        <state relative-caret-position="461">
+          <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/priv/tiba/tool/Equation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2546">
+          <caret line="164" column="94" selection-start-line="164" selection-start-column="94" selection-end-line="164" selection-end-column="94" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/priv/tiba/dao/RecordDao.xml">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="89" lean-forward="true" selection-start-line="6" selection-start-column="89" selection-end-line="6" selection-end-column="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/priv/tiba/dao/MistakeQuestionDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="62" selection-start-line="9" selection-start-column="62" selection-end-line="9" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/priv/tiba/questionModel/knowledgePoint12_easy/model1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="11" lean-forward="true" selection-start-column="11" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/priv/tiba/questionModel/knowledgePoint12_normal/words1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="132" lean-forward="true" selection-start-line="7" selection-start-column="132" selection-end-line="7" selection-end-column="132" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/priv/tiba/questionModel/knowledgePoint12_normal/words2.txt">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
-          <caret line="4" column="56" lean-forward="true" selection-start-line="4" selection-start-column="56" selection-end-line="4" selection-end-column="56" />
+          <caret line="4" column="35" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/priv/tiba/questionModel/knowledgePointTransfer.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="73" selection-start-column="68" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/priv/tiba/questionModel/knowledgePoint12_easy/words1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="63" lean-forward="true" selection-start-column="63" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/priv/tiba/questionModel/knowledgePoint12_normal/model1.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/priv/tiba/questionModel/knowledgePoint12_normal/model2.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/priv/tiba/questionModel/knowledgePoint13_normal/words2.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/priv/tiba/questionModel/knowledgePoint13_normal/answer2.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/priv/tiba/questionModel/knowledgePoint13_normal/model2.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/priv/tiba/questionModel/knowledgePoint13_normal/answer1.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/priv/tiba/questionModel/knowledgePoint13_normal/disturbance1.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/priv/tiba/questionModel/knowledgePoint13_normal/words1.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/priv/tiba/questionModel/knowledgePoint13_normal/model1.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/priv/tiba/controller/QuestionController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="38" column="100" selection-start-line="38" selection-start-column="100" selection-end-line="38" selection-end-column="100" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/priv/tiba/questionModel/knowledgePoint14_easy/words1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="60" lean-forward="true" selection-start-line="2" selection-start-column="60" selection-end-line="2" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/priv/tiba/questionModel/knowledgePoint14_easy/model1.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/priv/tiba/questionModel/knowledgePoint14_easy/answer1.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/priv/tiba/questionModel/knowledgePoint14_easy/disturbance1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="62" lean-forward="true" selection-start-line="2" selection-start-column="62" selection-end-line="2" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/priv/tiba/questionModel/knowledgePoint14_normal/answer1.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/priv/tiba/questionModel/knowledgePoint14_normal/disturbance1.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/priv/tiba/questionModel/knowledgePoint14_normal/model2.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/priv/tiba/questionModel/knowledgePoint14_normal/words2.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="36" selection-start-line="1" selection-start-column="36" selection-end-line="1" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/priv/tiba/questionModel/knowledgePoint14_normal/answer2.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/priv/tiba/questionModel/knowledgePoint14_normal/disturbance2.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/priv/tiba/questionModel/knowledgePoint14_normal/model1.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/priv/tiba/questionModel/knowledgePoint14_normal/words1.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/WEB-INF/jsp/question.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="358" column="60" lean-forward="true" selection-start-line="358" selection-start-column="60" selection-end-line="358" selection-end-column="60" />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#label#0;n#li#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/priv/tiba/tool/QuestionBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="87" column="55" selection-start-line="87" selection-start-column="47" selection-end-line="87" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#getDoubleNum#0;class#QuestionBuilder#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/priv/tiba/questionModel/knowledgePoint4_easy/answer1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="11" lean-forward="true" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/priv/tiba/questionModel/knowledgePoint4_easy/disturbance1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="62" lean-forward="true" selection-start-line="4" selection-start-column="62" selection-end-line="4" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/priv/tiba/questionModel/knowledgePoint4_easy/words1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="14" lean-forward="true" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/priv/tiba/questionModel/knowledgePoint4_easy/model1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="45" lean-forward="true" selection-start-line="7" selection-start-column="45" selection-end-line="7" selection-end-column="45" />
         </state>
       </provider>
     </entry>

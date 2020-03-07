@@ -327,9 +327,9 @@
         })
 
         function getAnswer() {
+            var rightAmount = 0;
             for(var i=0;i<questionList.length;i++){
                 var answer="(空)";
-                var rightAmount = 0;
                 if(questionList[i].type=="choose"){
                     for(var j=0;j<questionList[i].itemList.length;j++){
                         if($('#0_answer_'+(i+1)+'_option_'+(j+1)).val()=="yes"){
@@ -353,9 +353,10 @@
                     $('#div_0_answer_'+(i+1)).append('<a class="status1">放入错题集</a>');
                     D['qu_0_'+i] = answer;
                 }else{
-                    answer=$('#1_answer_'+(i+1)).val();
+                    if($('#1_answer_'+(i+1)).val().length > 0)
+                        answer=$('#1_answer_'+(i+1)).val();
                     $('#div_1_answer_'+(i+1)).text('所填答案：'+answer+" 正确答案："+questionList[i].questionKey);
-                    if(parseFloat(answer)==parseFloat(questionList[i].questionKey)){
+                    if(answer==questionList[i].questionKey){
                         rightAmount ++;
                         $('#div_1_answer_'+(i+1)).addClass("green");
                     }else{
