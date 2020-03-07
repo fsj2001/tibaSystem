@@ -1,0 +1,194 @@
+<!DOCTYPE>
+<html>
+<head>
+	<title>jquery多级树型标签</title>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+	<link rel="stylesheet" type="text/css" href="../css/tagTree.css" />
+	<link rel="stylesheet" type="text/css" href="../css/font-awesome.css" />
+	<script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="../js/tagTree.js"></script>
+	<script type="text/javascript">
+
+$(function(){
+
+    var data =[
+	    {
+			name:"五年级上",
+			value:"a",
+			children:[
+				{
+					name:"整数与小数的四则运算",
+					value:"1",
+					children:[
+						{
+							name:"小数乘整数",
+							value:"11",
+							children:[]
+						},
+						{
+							name:"小数乘小数",
+							value:"12",
+							children:[]
+						},
+						{
+							name:"除数是正数的小数除法",
+							value:"13",
+							children:[]
+						},
+						{
+							name:"一个数除以小数",
+							value:"14",
+							children:[]
+						}
+					]
+				},
+				{
+					name:"简易方程",
+					value:"2",
+					children:[]
+				},
+				{
+					name:"多边形面积求解",
+					value:"3",
+					children:[
+						{
+							name:"平行四边形的面积",
+							value:"31",
+							children:[]
+						},
+						{
+							name:"三角形面积的计算",
+							value:"32",
+							children:[]
+						},
+						{
+							name:"梯形面积的计算",
+							value:"33",
+							children:[]
+						},
+						{
+							name:"组合图形的面积",
+							value:"34",
+							children:[]
+						}
+					]
+				},
+				{
+					name:"植树问题",
+					value:"4",
+					children:[]
+				}
+			]
+		},
+		{
+			name:"五年级下",
+			value:"b",
+			children:[
+				{
+					name:"因数与倍数问题",
+					value:"5",
+					children:[
+						{
+							name:"因数与倍数",
+							value:"51",
+							children:[]
+						},
+						{
+							name:"2、5、3的倍数的特征",
+							value:"52",
+							children:[
+								{
+									name:"2的倍数的特征",
+									value:"521",
+									children:[]
+								},
+								{
+									name:"5的倍数的特征",
+									value:"522",
+									children:[
+										
+									]
+								},
+								{
+									name:"3的倍数的特征",
+									value:"523",
+									children:[]
+								}
+							]
+						},
+						{
+							name:"质数与合数",
+							value:"53",
+							children:[]
+						}
+					]
+				},
+				{
+					name:"基本立体图形的表面积和体积",
+					value:"6",
+					children:[
+						{
+							name:"长方体和正方体的表面积",
+							value:"61",
+							children:[]
+						},
+						{
+							name:"长方体和正方体的体积",
+							value:"62",
+							children:[
+								{
+									name:"体积和体积单位",
+									value:"621",
+									children:[]
+								},
+								{
+									name:"体积单位间的进率",
+									value:"622",
+									children:[
+										
+									]
+								},
+								{
+									name:"容积和容积单位",
+									value:"623",
+									children:[]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+    ];
+
+    $("#test").tagTree({
+    	id:"",
+    	data:data,
+    	fold:true,
+    	multiple:false,
+    	check:function(val){
+    		console.log('chekc:'+val);
+    		console.log($(this).tagTreeValues());
+    	},
+    	done:function(){
+    		console.log('tagTree is ok!');
+    	}
+    });
+});
+</script>
+</head>
+
+<body>
+<div id="test" class="panel-body" style="height: 600px; overflow-y:scroll">
+	<div style="border: 1px  #000000; width: 90%; margin: 0 auto;">
+                <span>
+
+            </span>
+	</div>
+</div>
+
+</body>
+
+</html>

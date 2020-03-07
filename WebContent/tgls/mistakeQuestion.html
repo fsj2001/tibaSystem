@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<!-- 公共样式 开始 -->
+		<link rel="stylesheet" type="text/css" href="../css/base.css">
+		<link rel="stylesheet" type="text/css" href="../css/iconfont.css">
+		<script type="text/javascript" src="../framework/jquery-1.11.3.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="../layui/css/layui.css">
+		<script type="text/javascript" src="../layui/layui.js"></script>
+		<!-- 滚动条插件 -->
+		<link rel="stylesheet" type="text/css" href="../css/jquery.mCustomScrollbar.css">
+		<script src="../framework/jquery-ui-1.10.4.min.js"></script>
+		<script src="../framework/jquery.mousewheel.min.js"></script>
+		<script src="../framework/jquery.mCustomScrollbar.min.js"></script>
+		<script src="../framework/cframe.js"></script>
+		<!-- 仅供所有子页面使用 -->
+		<!-- 公共样式 结束 -->
+
+		<link rel="stylesheet" href="../css/iconfontStyle.css">
+		<link rel="stylesheet" href="../css/iconfont.css">
+		<link href="../css/main.css" rel="stylesheet" type="text/css" />
+		<link href="../css/iconfont.css" rel="stylesheet" type="text/css" />
+		<link href="../css/test.css" rel="stylesheet" type="text/css" />
+	</head>
+
+	<body>
+
+	<div class="main">
+		<!--nr start-->
+		<div class="test_main">
+			<div class="nr_left">
+				<div class="test">
+					<div class="test_content_nr">
+						<ul id="here"></ul>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<!--nr end-->
+		<div class="foot"></div>
+	</div>
+
+	<script charset="utf-8">
+		$(function () {
+			var disc=["A", "B", "C", "D"];
+			var qidToQuestionId = {};
+			$.ajax({
+				type:'GET',
+				url:'../getMistakeQuestions.action',
+				dataType:'json',
+				contentType: 'application/json;charset=UTF-8',
+				success:function (data) {
+					var mm = {};
+					mm["A"] = 1;
+					mm["B"] = 2;
+					mm["C"] = 3;
+					mm["D"] = 4;
+					var map = data['knowledgeMap'];
+					var mistakeQuestions = data['mistakeQuestions'];
+					var questionNum = mistakeQuestions.length;
+					var totalHtml = "";
+					for(var i=0;i<questionNum;i++){
+						var id = "q" + (i+1);
+						qidToQuestionId[id] = mistakeQuestions[i].questionId;
+						var text1 = "<li id=\""+id+"\">\n" +
+								"\t\t\t\t\t\t\t\t<div class=\"test_content_nr_tt\">\n" +
+								"\t\t\t\t\t\t\t\t\t<i>"+(i+1)+"</i><span>(1point)</span><font>"+mistakeQuestions[i].title+"</font><b class=\"icon iconfont\">&#xe881;</b>\n" +
+								"\t\t\t\t\t\t\t\t</div>\n" +
+								"\t\t\t\t\t\t\t\t<div class=\"test_content_nr_main\">\n" +
+								"\t\t\t\t\t\t\t\t\t<ul>";
+						var text2, text3;
+						var color = mistakeQuestions[i].answer == mistakeQuestions[i].questionKey?"green":"red";
+						if(mistakeQuestions[i].type == 'choose'){
+							for(var j=0;j<mistakeQuestions[i].itemList.length;j++){
+								var checked = mm[mistakeQuestions[i].answer] == j+1?"checked = \"checked\"":"";
+								text2 = "<li class=\"option\">\n" +
+										"\t\t\t\t\t\t\t\t\t\t\t<input type=\"radio\" class=\"radioOrCheck\" name=\"answer"+(i+1)+"\" "+checked+" disabled=\"disabled\"\n" +
+										"\t\t\t\t\t\t\t\t\t\t\t\t   id=\"q"+(i+1)+"_answer"+(j+1)+"\"\n" +
+										"\t\t\t\t\t\t\t\t\t\t\t/>\n" +
+										"\t\t\t\t\t\t\t\t\t\t\t<label for=\"q"+(i+1)+"_answer"+(j+1)+"\">\n" +
+										"\t\t\t\t\t\t\t\t\t\t\t\t"+disc[j]+".\n" +
+										"\t\t\t\t\t\t\t\t\t\t\t\t<p class=\"ue\" style=\"display: inline;\">"+mistakeQuestions[i].itemList[j]+"</p>\n" +
+										"\t\t\t\t\t\t\t\t\t\t\t</label>\n" +
+										"\t\t\t\t\t\t\t\t\t\t</li>";
+								text1 += text2;
+							}
+							text3 = "</ul><div style=\"color:"+color+"\">所选答案："+mistakeQuestions[i].answer+"  正确答案："+mistakeQuestions[i].questionKey+"</div>\n" +
+									"\t\t\t\t\t\t\t\t\t<div>日期："+parseDate(mistakeQuestions[i].questionDate)+"</div>\n" +
+									"\t\t\t\t\t\t\t\t\t<div>知识点："+map[mistakeQuestions[i].knowledgePoint]+"</div>\n" +
+									"\t\t\t\t\t\t\t\t\t<button href=\"#\" class=\"status1\">移出错题集</button></div>\n" +
+									"\t\t\t\t\t\t\t</li>";
+						}else{
+							text3 = "</ul><div style=\"color:"+color+"\">所填答案："+mistakeQuestions[i].answer+"  正确答案："+mistakeQuestions[i].questionKey+"</div>\n" +
+									"\t\t\t\t\t\t\t\t\t<div>日期："+parseDate(mistakeQuestions[i].questionDate)+"</div>\n" +
+									"\t\t\t\t\t\t\t\t\t<div>知识点："+map[mistakeQuestions[i].knowledgePoint]+"</div>\n" +
+									"\t\t\t\t\t\t\t\t\t<button href=\"#\" class=\"status1\">移出错题集</button></div>\n" +
+									"\t\t\t\t\t\t\t</li>";
+						}
+						totalHtml += text1 + text3;
+					}
+					$('#here').html(totalHtml);
+				}
+			});
+
+			$('body').on('click', '.status1', function () {
+				var questionId = qidToQuestionId[$(this).parent().parent().attr('id')];
+				$.ajax({
+					type:'GET',
+					url:'../deleteMistakeQuestion.action',
+					data:'questionId='+questionId,
+					dataType:'text',
+					contentType: 'application/json;charset=UTF-8',
+					success:function (data) {
+						location.reload();
+					}
+				})
+			})
+
+		});
+
+		function parseDate(date) {
+			var year = date.year + 1900;
+			var month = date.month + 1;
+			var day = date.date;
+			return year+"-"+month+"-"+day;
+		}
+
+	</script>
+
+	<style>
+		[class ^= 'status']{
+			font-weight: 200;
+			font-size: 16px;
+			font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+			text-decoration: none;
+			text-align: center;
+			line-height: 40px;
+			height: 40px;
+			padding: 0 40px;
+			display: inline-block;
+			cursor: pointer;
+			border: none;
+			box-sizing: border-box;
+			transition-property: all;
+			transition-duration: .3s;
+			color: #fff;
+			background: #EF4DB6;
+			transition: .8s;
+			border-radius: 200px;
+			margin-left:70%;
+		}
+		.status1:hover{
+			transform: scale(1.2, 1.2)
+		}
+		.status2{
+			cursor: not-allowed;
+			opacity:60%;
+		}
+	</style>
+	</body>
+
+</html>
