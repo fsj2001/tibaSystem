@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<!-- 公共样式 开始 -->
+		<link rel="shortcut icon" href="images/favicon.ico"/>
+		<link rel="bookmark" href="images/favicon.ico"/>
+		<script type="text/javascript" src="framework/jquery-1.11.3.min.js" ></script>
+		<link rel="stylesheet" type="text/css" href="layui/css/layui.css">
+		<script type="text/javascript" src="layui/layui.js"></script>
+		<script type="text/javascript" src="js/login.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/sel.css">
+
+		<style>
+			.layui-form{
+				margin-right: 10%;
+			}
+		</style>
+
+	</head>
+
+	<body>
+		
+		<!--主体 开始-->
+		<div class="login_main" style="background-image: url('images/login_bg1.jpg')">
+			<div class="form_tzgg">
+				<div class="form">
+					<form action="getQuestionList.action" method="post" class="layui-form">
+						<div class="layui-form-item">
+							<label class="layui-form-label">知识点名称</label>
+							<div class="layui-input-inline shortInput">
+								<input id="knowledge-point" name="knowledgePoint" type="text" class="layui-input" readonly="true" placeholder="知识点xxx">
+							</div>
+						</div>
+						<div class="layui-form-item">
+							<label class="layui-form-label">题目数量</label>
+							<div class="layui-input-inline shortInput">
+								<input id="amount-of-questions" name="numberOfQuestions" type="text" class="layui-input">
+							</div>
+						</div>
+						<div class="layui-form-item">
+							<label class="layui-form-label">题目难度</label>
+							<div class="layui-input-inline">
+								<select name="difficulty" id="provid1" lay-filter="provid">
+									<option value="easy">简单</option>
+									<option value="normal">中等</option>
+									<option value="difficult">困难</option>
+								</select>
+							</div>
+						</div>
+						<div class="layui-form-item">
+							<label class="layui-form-label">题目类型</label>
+							<div class="layui-input-inline">
+								<select name="type" id="provid2" lay-filter="provid">
+									<option value="choose">选择题</option>
+									<option value="fill">填空题</option>
+									<option value="hybrid">混合题</option>
+								</select>
+							</div>
+						</div>
+						<div class="layui-form-item">
+							<label class="layui-form-label">答题时间</label>
+							<div class="layui-input-inline">
+								<select name="totalTime" id="provid3" lay-filter="provid">
+									<option value="any">不限</option>
+								</select>
+							</div>
+						</div>
+						<div class="but">
+							<button class="layui-btn" type="submit" id="submit">确认生成</button>
+						</div>
+					</form>
+				</div>
+				<script>
+					var url = window.location.href;
+					var param = url.slice(url.indexOf("?") + 1).split("=")[1];
+					var disc = {"11":"小数乘整数", "12":"小数乘小数", "13":"除数是正数的小数除法", "14":"一个数除以小数", "2":"解简易方程",
+						"31":"平行四边形的面积", "32":"三角形面积的计算", "33":"梯形面积的计算", "34":"组合图形的面积",
+						"4":"植树问题", "51":"因数与倍数", "521":"2的倍数的特征", "522":"5的倍数的特征", "523":"3的倍数的特征", "53":"质数与合数",
+						"61":"长方体和正方体的表面积", "621":"体积和体积单位", "622":"体积单位间的进率", "623":"容积和容积单位"};
+					$("#knowledge-point").attr('value', disc[param]);
+
+					layui.use('form', function() {
+						var form = layui.form;
+					});
+				</script>
+			</div>
+		</div>
+		<!--主体 结束-->
+	</body>
+
+</html>

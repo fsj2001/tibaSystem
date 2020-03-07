@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="priv.tiba.dao.UserDao">
+    <select id="findUser" parameterType="String" resultType="user">
+        select * from tbl_user where userid = #{userId} and password = #{password}
+    </select>
+
+    <insert id="addUser" parameterType="user">
+        insert into tbl_user(userid, password)
+        values(#{userId}, #{password})
+    </insert>
+
+    <update id="modifyUser" parameterType="String">
+        update tbl_user set password = #{password} where userid = #{userId}
+    </update>
+</mapper>

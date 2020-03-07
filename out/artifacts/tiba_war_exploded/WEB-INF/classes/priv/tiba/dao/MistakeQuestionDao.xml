@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="priv.tiba.dao.MistakeQuestionDao">
+    <insert id="setMistakeQuestion" parameterType="mistakeQuestion">
+        insert into tbl_mistake_question(questionid, knowledgepoint, questiondate, userid, type, title, questionkey, answer)
+        values(#{questionId}, #{knowledgePoint}, #{questionDate}, #{userId}, #{type}, #{title}, #{questionKey}, #{answer})
+    </insert>
+
+    <select id="getMistakeQuestions" parameterType="String" resultType="MistakeQuestion">
+        select * from tbl_mistake_question where userid = #{userId}
+    </select>
+
+    <delete id="deleteMistakeQuestion" parameterType="String">
+        delete from tbl_mistake_question where questionid = #{questionId}
+    </delete>
+</mapper>
