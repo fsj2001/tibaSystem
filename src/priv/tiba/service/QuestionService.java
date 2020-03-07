@@ -1,5 +1,6 @@
 package priv.tiba.service;
 
+import org.springframework.stereotype.Controller;
 import priv.tiba.pojo.MistakeQuestion;
 import priv.tiba.pojo.Question;
 

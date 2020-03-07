@@ -47,189 +47,7 @@
                         </div>
                     </div>
                     <div class="test_content_nr" id="choose_questions_div">
-                        <ul id="choose_questions_ul">
-
-<%--                            <li id="qu_0_0">--%>
-<%--                                <div class="test_content_nr_tt">--%>
-<%--                                    <i>1</i><span>(1分)</span><font>0.8 × 5 =（  ）</font><b class="icon iconfont">&#xe881;</b>--%>
-<%--                                </div>--%>
-
-<%--                                <div class="test_content_nr_main">--%>
-<%--                                    <ul>--%>
-
-<%--                                        <li class="option">--%>
-
-<%--                                            <input type="radio" class="radioOrCheck" name="0_answer_1_option_1"--%>
-<%--                                                   id="0_answer_1_option_1"--%>
-<%--                                            />--%>
-
-
-<%--                                            <label for="0_answer_1_option_1">--%>
-<%--                                                A.--%>
-<%--                                                <p class="ue" style="display: inline;">0.16</p>--%>
-<%--                                            </label>--%>
-<%--                                        </li>--%>
-
-<%--                                        <li class="option">--%>
-
-<%--                                            <input type="radio" class="radioOrCheck" name="0_answer_1_option_2"--%>
-<%--                                                   id="0_answer_1_option_2"--%>
-<%--                                            />--%>
-
-
-<%--                                            <label for="0_answer_1_option_2">--%>
-<%--                                                B.--%>
-<%--                                                <p class="ue" style="display: inline;">0.2</p>--%>
-<%--                                            </label>--%>
-<%--                                        </li>--%>
-
-<%--                                        <li class="option">--%>
-
-<%--                                            <input type="radio" class="radioOrCheck" name="0_answer_1_option_3"--%>
-<%--                                                   id="0_answer_1_option_3"--%>
-<%--                                            />--%>
-
-
-<%--                                            <label for="0_answer_1_option_3">--%>
-<%--                                                C.--%>
-<%--                                                <p class="ue" style="display: inline;">0.4</p>--%>
-<%--                                            </label>--%>
-<%--                                        </li>--%>
-
-<%--                                        <li class="option">--%>
-
-<%--                                            <input type="radio" class="radioOrCheck" name="0_answer_1_option_4"--%>
-<%--                                                   id="0_answer_1_option_4"--%>
-<%--                                            />--%>
-
-
-<%--                                            <label for="0_answer_1_option_4">--%>
-<%--                                                D.--%>
-<%--                                                <p class="ue" style="display: inline;">4</p>--%>
-<%--                                            </label>--%>
-<%--                                        </li>--%>
-<%--                                        <div id="div_0_answer_1"></div>--%>
-<%--                                    </ul>--%>
-<%--                                </div>--%>
-<%--                            </li>--%>
-
-<%--                            <li id="qu_0_1">--%>
-<%--                                <div class="test_content_nr_tt">--%>
-<%--                                    <i>2</i><span>(1分)</span><font>0.84 × 7 = （  ）</font><b class="icon iconfont">&#xe881;</b>--%>
-<%--                                </div>--%>
-
-<%--                                <div class="test_content_nr_main">--%>
-<%--                                    <ul>--%>
-
-<%--                                        <li class="option">--%>
-
-<%--                                            <input type="radio" class="radioOrCheck" name="0_answer_2_option_1"--%>
-<%--                                                   id="0_answer_2_option_1"--%>
-<%--                                            />--%>
-
-
-<%--                                            <label for="0_answer_2_option_1">--%>
-<%--                                                A.--%>
-<%--                                                <p class="ue" style="display: inline;">58.8</p>--%>
-<%--                                            </label>--%>
-<%--                                        </li>--%>
-
-<%--                                        <li class="option">--%>
-
-<%--                                            <input type="radio" class="radioOrCheck" name="0_answer_2_option_2"--%>
-<%--                                                   id="0_answer_2_option_2"--%>
-<%--                                            />--%>
-
-
-<%--                                            <label for="0_answer_2_option_2">--%>
-<%--                                                B.--%>
-<%--                                                <p class="ue" style="display: inline;">5.88</p>--%>
-<%--                                            </label>--%>
-<%--                                        </li>--%>
-
-<%--                                        <li class="option">--%>
-
-<%--                                            <input type="radio" class="radioOrCheck" name="0_answer_2_option_3"--%>
-<%--                                                   id="0_answer_2_option_3"--%>
-<%--                                            />--%>
-
-
-<%--                                            <label for="0_answer_2_option_3">--%>
-<%--                                                C.--%>
-<%--                                                <p class="ue" style="display: inline;">0.588</p>--%>
-<%--                                            </label>--%>
-<%--                                        </li>--%>
-
-<%--                                        <li class="option">--%>
-
-<%--                                            <input type="radio" class="radioOrCheck" name="0_answer_2_option_4"--%>
-<%--                                                   id="0_answer_2_option_4"--%>
-<%--                                            />--%>
-
-
-<%--                                            <label for="0_answer_2_option_4">--%>
-<%--                                                D.--%>
-<%--                                                <p class="ue" style="display: inline;">588</p>--%>
-<%--                                            </label>--%>
-<%--                                        </li>--%>
-
-<%--                                    </ul>--%>
-<%--                                    <div id="div_0_answer_2"></div>--%>
-<%--                                </div>--%>
-<%--                            </li>--%>
-
-<%--                            <li id="qu_0_2">--%>
-<%--                                <div class="test_content_nr_tt">--%>
-<%--                                    <i>3</i><span>(1分)</span><font>要下雨了，小丽看见远处有闪电，4秒后听到了雷声，闪电的地方离小丽有多远？（雷声在空气中的传播速度是0.33千米/秒）</font><b class="icon iconfont">&#xe881;</b>--%>
-<%--                                </div>--%>
-
-<%--                                <div class="test_content_nr_main">--%>
-<%--                                    <ul>--%>
-
-<%--                                        <li class="option">--%>
-
-<%--                                            <input type="radio" class="radioOrCheck" name="0_answer_3_option_1"--%>
-<%--                                                   id="0_answer_3_option_1"--%>
-<%--                                            />--%>
-
-
-<%--                                            <label for="0_answer_3_option_1">--%>
-<%--                                                A.--%>
-<%--                                                <p class="ue" style="display: inline;">0.33千米</p>--%>
-<%--                                            </label>--%>
-<%--                                        </li>--%>
-
-<%--                                        <li class="option">--%>
-
-<%--                                            <input type="radio" class="radioOrCheck" name="0_answer_3_option_2"--%>
-<%--                                                   id="0_answer_3_option_2"--%>
-<%--                                            />--%>
-
-
-<%--                                            <label for="0_answer_3_option_2">--%>
-<%--                                                B.--%>
-<%--                                                <p class="ue" style="display: inline;">4.33千米</p>--%>
-<%--                                            </label>--%>
-<%--                                        </li>--%>
-
-<%--                                        <li class="option">--%>
-
-<%--                                            <input type="radio" class="radioOrCheck" name="0_answer_3_option_3"--%>
-<%--                                                   id="0_answer_3_option_3"--%>
-<%--                                            />--%>
-
-
-<%--                                            <label for="0_answer_3_option_3">--%>
-<%--                                                C.--%>
-<%--                                                <p class="ue" style="display: inline;">1.34千米</p>--%>
-<%--                                            </label>--%>
-<%--                                        </li>--%>
-
-<%--                                    </ul>--%>
-<%--                                    <div id="div_0_answer_3"></div>--%>
-<%--                                </div>--%>
-<%--                            </li>--%>
-                        </ul>
+                        <ul id="choose_questions_ul"></ul>
                     </div>
 
                     <div class="test_content" id="fillContent">
@@ -274,15 +92,7 @@
                             </p>
                         </div>
                         <div class="rt_content_nr answerSheet">
-                            <ul id="choose_record_ul">
-
-<%--                                <li><a href="#qu_0_0">1</a></li>--%>
-
-<%--                                <li><a href="#qu_0_1">2</a></li>--%>
-
-<%--                                <li><a href="#qu_0_2">3</a></li>--%>
-
-                            </ul>
+                            <ul id="choose_record_ul"></ul>
                         </div>
                     </div>
 
@@ -294,12 +104,7 @@
                             </p>
                         </div>
                         <div class="rt_content_nr answerSheet">
-                            <ul id="fill_record_ul">
-
-<%--                                <li><a href="#qu_1_0">1</a></li>--%>
-
-
-                            </ul>
+                            <ul id="fill_record_ul"></ul>
                         </div>
                     </div>
 
@@ -524,6 +329,7 @@
         function getAnswer() {
             for(var i=0;i<questionList.length;i++){
                 var answer="(空)";
+                var rightAmount = 0;
                 if(questionList[i].type=="choose"){
                     for(var j=0;j<questionList[i].itemList.length;j++){
                         if($('#0_answer_'+(i+1)+'_option_'+(j+1)).val()=="yes"){
@@ -539,6 +345,7 @@
                     }
                     $('#div_0_answer_'+(i+1)).text('所选答案：'+answer+" 正确答案："+questionList[i].questionKey);
                     if(answer==questionList[i].questionKey){
+                        rightAmount ++;
                         $('#div_0_answer_'+(i+1)).addClass("green");
                     }else{
                         $('#div_0_answer_'+(i+1)).addClass("red");
@@ -549,6 +356,7 @@
                     answer=$('#1_answer_'+(i+1)).val();
                     $('#div_1_answer_'+(i+1)).text('所填答案：'+answer+" 正确答案："+questionList[i].questionKey);
                     if(parseFloat(answer)==parseFloat(questionList[i].questionKey)){
+                        rightAmount ++;
                         $('#div_1_answer_'+(i+1)).addClass("green");
                     }else{
                         $('#div_1_answer_'+(i+1)).addClass("red");
@@ -557,6 +365,26 @@
                     D['qu_1_'+i] = answer;
                 }
             }
+
+            var postData = {
+                questionAmount:questionList.length,
+                rightAmount:rightAmount
+            };
+
+            $.ajax({
+                type:'POST',
+                url:'${pageContext.request.contextPath}/createNewRecord.action',
+                data:JSON.stringify(postData),
+                dataType:'text',
+                contentType: 'application/json;charset=UTF-8',
+                succeed:function (data) {
+                    alert(data);
+                },
+                error:function () {
+                    alert('wuwuwu');
+                }
+            })
+
         };
 
     });
