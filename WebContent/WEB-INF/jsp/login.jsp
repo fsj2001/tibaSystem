@@ -11,18 +11,6 @@
 <script src=
        "${pageContext.request.contextPath}/js/jquery-1.11.3.min.js">
 </script>
-<script>
-// 判断是登录账号和密码是否为空
-// function check(){
-//     var email = $("#email").val();
-//     var password = $("#password").val();
-//     if(email=="" || password==""){
-//     	$("#message").text("邮箱或密码不能为空！");
-//         return false;
-//     }
-//     return true;
-// }
-</script>
 </head>
 <body>
 <h1>题霸系统</h1>
