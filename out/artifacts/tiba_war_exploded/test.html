@@ -76,10 +76,6 @@
 					var url = window.location.href;
 					var param = url.slice(url.indexOf("?") + 1).split("=")[1];
 					var disc = {};
-					// var disc = {"11":"小数乘整数", "12":"小数乘小数", "13":"除数是正数的小数除法", "14":"一个数除以小数", "2":"解简易方程",
-					// 	"31":"平行四边形的面积", "32":"三角形面积的计算", "33":"梯形面积的计算", "34":"组合图形的面积",
-					// 	"4":"植树问题", "51":"因数与倍数", "521":"2的倍数的特征", "522":"5的倍数的特征", "523":"3的倍数的特征", "53":"质数与合数",
-					// 	"61":"长方体和正方体的表面积", "621":"体积和体积单位", "622":"体积单位间的进率", "623":"容积和容积单位"};
 					$.ajax({
 						type:'GET',
 						url:'getKnowledgePointMap.action',
@@ -89,7 +85,7 @@
 							disc = data['knowledgeMap'];
 							$("#knowledge-point").attr('value', disc[param]);
 						}
-					})
+					});
 					layui.use('form', function() {
 						var form = layui.form;
 					});

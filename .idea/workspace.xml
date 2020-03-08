@@ -30,13 +30,7 @@
       <change afterPath="$PROJECT_DIR$/../../hello2/src/main/resources/jdbc.properties" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../hello2/src/main/resources/log4j.properties" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../hello2/src/main/resources/spring/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebContent/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/test.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/priv/tiba/controller/QuestionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/priv/tiba/controller/QuestionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/priv/tiba/questionModel/knowledgePoint4_easy/model1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/priv/tiba/questionModel/knowledgePoint4_easy/model1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/priv/tiba/questionModel/knowledgePoint4_easy/words1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/priv/tiba/questionModel/knowledgePoint4_easy/words1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/priv/tiba/service/impl/QuestionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/priv/tiba/service/impl/QuestionServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/priv/tiba/tool/ParseKnowledgePoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/priv/tiba/tool/ParseKnowledgePoint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/priv/tiba/tool/QuestionBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/priv/tiba/tool/QuestionBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/tgls/qdAPI.html" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/build/classes/" />
@@ -50,20 +44,7 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/WebContent/test.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="80" column="55" selection-start-line="80" selection-start-column="55" selection-end-line="80" selection-end-column="55" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -140,7 +121,6 @@
         <option value="$PROJECT_DIR$/WebContent/layui/css/layui.css" />
         <option value="$PROJECT_DIR$/WebContent/WEB-INF/jsp/mistakeQuestion.jsp" />
         <option value="$PROJECT_DIR$/WebContent/tgls/iconfont.html" />
-        <option value="$PROJECT_DIR$/WebContent/WEB-INF/jsp/frame.jsp" />
         <option value="$PROJECT_DIR$/src/priv/tiba/pojo/Question.java" />
         <option value="$PROJECT_DIR$/src/priv/tiba/pojo/MistakeQuestion.java" />
         <option value="$PROJECT_DIR$/src/priv/tiba/tool/parseKnowledgePoint.java" />
@@ -175,6 +155,7 @@
         <option value="$PROJECT_DIR$/src/priv/tiba/service/impl/QuestionServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/priv/tiba/controller/QuestionController.java" />
         <option value="$PROJECT_DIR$/WebContent/test.html" />
+        <option value="$PROJECT_DIR$/WebContent/WEB-INF/jsp/frame.jsp" />
       </list>
     </option>
   </component>
@@ -226,39 +207,7 @@
             <path>
               <item name="tibaSystem" type="b2602c69:ProjectViewProjectNode" />
               <item name="tibaSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tibaSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tibaSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="priv" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tibaSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tibaSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="priv" type="462c0819:PsiDirectoryNode" />
-              <item name="tiba" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tibaSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tibaSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="priv" type="462c0819:PsiDirectoryNode" />
-              <item name="tiba" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tibaSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tibaSystem" type="462c0819:PsiDirectoryNode" />
               <item name="WebContent" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tibaSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tibaSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="WebContent" type="462c0819:PsiDirectoryNode" />
-              <item name="tgls" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="tibaSystem" type="b2602c69:ProjectViewProjectNode" />
@@ -285,7 +234,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/WebContent/tgls" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Artifacts" />
@@ -575,7 +524,7 @@
       <workItem from="1583205007801" duration="423000" />
       <workItem from="1583291336574" duration="4519000" />
       <workItem from="1583333111917" duration="53889000" />
-      <workItem from="1583509504730" duration="20463000" />
+      <workItem from="1583509504730" duration="21585000" />
     </task>
     <task id="LOCAL-00001" summary="create project">
       <created>1583546827498</created>
@@ -588,13 +537,12 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="352774000" />
+    <option name="totallyTimeSpent" value="353896000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17750533" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17750533" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -604,7 +552,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.34164858" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.18004338" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.18980478" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.38937092" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -637,47 +585,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="create project" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/priv/tiba/pojo/Question.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-          <folding>
-            <element signature="e#263#264#0" expanded="true" />
-            <element signature="e#297#298#0" expanded="true" />
-            <element signature="e#351#352#0" expanded="true" />
-            <element signature="e#397#398#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/priv/tiba/pojo/MistakeQuestion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="519">
-          <caret line="49" column="42" selection-start-line="49" selection-start-column="31" selection-end-line="49" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#750#751#0" expanded="true" />
-            <element signature="e#779#780#0" expanded="true" />
-            <element signature="e#823#824#0" expanded="true" />
-            <element signature="e#859#860#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/priv/tiba/pojo/Record.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="58" column="28" selection-start-line="58" selection-start-column="19" selection-end-line="58" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/priv/tiba/service/QuestionService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/priv/tiba/dao/RecordDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
@@ -958,13 +865,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/WebContent/test.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="80" column="55" selection-start-line="80" selection-start-column="55" selection-end-line="80" selection-end-column="55" />
+        <state relative-caret-position="1463">
+          <caret line="77" column="34" lean-forward="true" selection-start-line="77" selection-start-column="34" selection-end-line="77" selection-end-column="34" />
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/tgls/agent/agent_add.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/tgls/qdAPI.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/WEB-INF/jsp/frame.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="589">
+          <caret line="55" column="105" selection-start-line="55" selection-start-column="105" selection-end-line="55" selection-end-column="105" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/tgls/reportForm.html">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">

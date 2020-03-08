@@ -53,7 +53,7 @@
 		                <a class="menuFA" href="javascript:void(0)" onclick="menuCAClick('tgls/mistakeQuestion.html',this)"><i class="iconfont icon-yijiedan left"></i>错题集</a>
 		           	</li>
 					<li>
-						<a class="menuFA" href="javascript:void(0)" onclick="menuCAClick('tgls/reportForm/reportForm1.html',this)"><i class="iconfont icon-icon left"></i>统计</a>
+						<a class="menuFA" href="javascript:void(0)" onclick="menuCAClick('tgls/reportForm.html',this)"><i class="iconfont icon-icon left"></i>统计</a>
 					</li>
 		        </ul>
 		    </div>
