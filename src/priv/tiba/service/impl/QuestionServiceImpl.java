@@ -2,17 +2,11 @@ package priv.tiba.service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.util.ResourceUtils;
 import priv.tiba.dao.MistakeQuestionDao;
 import priv.tiba.pojo.MistakeQuestion;
 import priv.tiba.pojo.Question;
 import priv.tiba.service.QuestionService;
-import priv.tiba.tool.EquationBuilder;
-import priv.tiba.tool.QuestionBuilder;
-import priv.tiba.tool.RandomBuilder;
-import priv.tiba.tool.ReadQuestionModel;
-import java.io.File;
-import java.io.FileNotFoundException;
+import priv.tiba.tool.*;
 import java.util.*;
 
 @Service("questionService")
@@ -23,23 +17,7 @@ public class QuestionServiceImpl implements QuestionService {
 
     @Override
     public List<Question> getQuestionList(String knowledgePoint, String numberOfQuestions, String difficulty, String type) {
-        Map<String, String> map = new HashMap<>();
-        File mapperFile = null;
-        try {
-            System.out.println(ResourceUtils.getURL("classpath:").getPath()+"priv/tiba/questionModel/knowledgePointTransfer.txt");
-            mapperFile = new File(ResourceUtils.getURL("classpath:").getPath()+"/priv/tiba/questionModel/knowledgePointTransfer.txt");
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
-        String mapper = ReadQuestionModel.readQuestionModel(mapperFile).get(0);
-        mapper = mapper.replaceAll("\r\n", "");
-        String[] strings = mapper.split(", ");
-        for(String string : strings){
-            String[] ss = string.split(":");
-            String key = ss[1].replaceAll("\"", "");
-            String value = ss[0].replaceAll("\"", "");
-            map.put(key, value);
-        }
+        Map<String, String> map = ParseKnowledgePoint.stringToNum();
         knowledgePoint = map.get(knowledgePoint);
         List<Question> questions = new ArrayList<>();
         if(type.equals("fill")||type.equals("choose")){

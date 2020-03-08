@@ -84,6 +84,7 @@ public class QuestionBuilder {
                     model = model.replaceFirst("\\{i\\(\\d+(_\\d+)?\\)\\}", String.valueOf(intNum));
                     m1 = pattern1.matcher(model);
                 }
+                System.out.println(model+":"+contentI[0]+","+contentI[1]);
                 //植树问题凑数据
                 if(knowledgePoint.equals("4")&&contentI[0]>contentI[1]&&contentI[0]%contentI[1]!=0){
                     model = model.replaceFirst(String.valueOf(contentI[0]), String.valueOf(contentI[0]/contentI[1]*contentI[1]));

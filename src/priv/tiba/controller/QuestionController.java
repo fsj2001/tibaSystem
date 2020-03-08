@@ -54,7 +54,7 @@ public class QuestionController {
         JSONArray jsonArray = JSONArray.fromObject(mistakeQuestions);
         Map<String, Object> map = new HashMap<>();
         map.put("mistakeQuestions", jsonArray);
-        map.put("knowledgeMap", ParseKnowledgePoint.getKnowledgePoint());
+        map.put("knowledgeMap", ParseKnowledgePoint.numToString());
         return map;
     }
 
@@ -65,48 +65,11 @@ public class QuestionController {
         return "ok";
     }
 
-
-
-//    @RequestMapping(value = "/getAnswers.action", method = RequestMethod.POST)
-//    @ResponseBody
-//    public List<Answer> getAnswer(HttpServletRequest request, HttpSession session){
-//        List<Answer> answerList = new ArrayList<>();
-//        Enumeration<String> enums = request.getParameterNames();
-//        enums.nextElement();
-//        List<Question> questionList = (List<Question>)session.getAttribute("questionList");
-//        int index=0;
-//        while (enums.hasMoreElements()) {
-//            String paramName =  enums.nextElement();
-//            String paramValue = request.getParameter(paramName);
-//            String[] strings = paramName.split("_");
-//            String type = strings[0];
-//            String qid = strings[2];
-//            String answer;
-//            if(index==questionList.size())
-//                break;
-//            String key = questionList.get(index++).getKey();
-//            if(type.equals("0")){
-//                answer = strings[4];
-//                if(strings[4].equals("1")){
-//                    answer = "A";
-//                }else if(strings[4].equals("2")){
-//                    answer = "B";
-//                }else if(strings[4].equals("3")){
-//                    answer = "C";
-//                }else if(strings[4].equals("4")){
-//                    answer = "D";
-//                }
-//            }else{
-//                answer = paramValue;
-//            }
-//            Answer answer1 = new Answer();
-//            answer1.setType(Integer.valueOf(type));
-//            answer1.setQuestionId(qid);
-//            answer1.setUserAnswer(answer);
-//            answer1.setRealAnswer(key);
-//            answerList.add(answer1);
-//        }
-//
-//        return answerList;
-//    }
+    @ResponseBody
+    @RequestMapping(value = "/getKnowledgePointMap.action", method = RequestMethod.GET)
+    public Map<String, Object> getKnowledgePointMap(){
+        Map<String, Object> map = new HashMap<>();
+        map.put("knowledgeMap", ParseKnowledgePoint.numToString());
+        return map;
+    }
 }
