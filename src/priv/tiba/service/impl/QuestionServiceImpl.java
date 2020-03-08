@@ -7,6 +7,8 @@ import priv.tiba.pojo.MistakeQuestion;
 import priv.tiba.pojo.Question;
 import priv.tiba.service.QuestionService;
 import priv.tiba.tool.*;
+
+import java.sql.Timestamp;
 import java.util.*;
 
 @Service("questionService")
@@ -49,7 +51,7 @@ public class QuestionServiceImpl implements QuestionService {
     public int setMistakeQuestion(String answer, String knowledgePoint, String title, String key, String type, List<String> itemList, String userId) {
         MistakeQuestion mistakeQuestion = new MistakeQuestion();
         mistakeQuestion.setQuestionId(UUID.randomUUID().toString().replaceAll("-", ""));
-        mistakeQuestion.setQuestionDate(new Date());
+        mistakeQuestion.setQuestionDate(new Timestamp((new Date()).getTime()));
         mistakeQuestion.setUserId(userId);
         mistakeQuestion.setTitle(title);
         mistakeQuestion.setQuestionKey(key);
@@ -75,12 +77,5 @@ public class QuestionServiceImpl implements QuestionService {
     @Override
     public int deleteMistakeQuestion(String questionId) {
         return mistakeQuestionDao.deleteMistakeQuestion(questionId);
-    }
-
-    public static void main(String[] args){
-//        List<MistakeQuestion> list = this.getMistakeQuestions("848564778@qq.com");
-//        for(MistakeQuestion mistakeQuestion : list){
-//            System.out.println(mistakeQuestion.getTitle());
-//        }
     }
 }

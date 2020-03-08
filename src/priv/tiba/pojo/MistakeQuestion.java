@@ -1,5 +1,6 @@
 package priv.tiba.pojo;
 
+import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -15,13 +16,6 @@ public class MistakeQuestion extends Question{
         this.questionId = questionId;
     }
 
-    public Date getQuestionDate() {
-        return questionDate;
-    }
-
-    public void setQuestionDate(Date questionDate) {
-        this.questionDate = questionDate;
-    }
 
     public String getUserId() {
         return userId;
@@ -31,7 +25,15 @@ public class MistakeQuestion extends Question{
         this.userId = userId;
     }
 
-    private Date questionDate;
+    public Timestamp getQuestionDate() {
+        return questionDate;
+    }
+
+    public void setQuestionDate(Timestamp questionDate) {
+        this.questionDate = questionDate;
+    }
+
+    private Timestamp questionDate;
     private String userId;
 
     public String getAnswer() {

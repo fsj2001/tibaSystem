@@ -88,13 +88,13 @@
 								text1 += text2;
 							}
 							text3 = "</ul><div style=\"color:"+color+"\">所选答案："+mistakeQuestions[i].answer+"  正确答案："+mistakeQuestions[i].questionKey+"</div>\n" +
-									"\t\t\t\t\t\t\t\t\t<div>日期："+parseDate(mistakeQuestions[i].questionDate)+"</div>\n" +
+									"\t\t\t\t\t\t\t\t\t<div>时间："+parseDate(mistakeQuestions[i].questionDate)+"</div>\n" +
 									"\t\t\t\t\t\t\t\t\t<div>知识点："+map[mistakeQuestions[i].knowledgePoint]+"</div>\n" +
 									"\t\t\t\t\t\t\t\t\t<button href=\"#\" class=\"status1\">移出错题集</button></div>\n" +
 									"\t\t\t\t\t\t\t</li>";
 						}else{
 							text3 = "</ul><div style=\"color:"+color+"\">所填答案："+mistakeQuestions[i].answer+"  正确答案："+mistakeQuestions[i].questionKey+"</div>\n" +
-									"\t\t\t\t\t\t\t\t\t<div>日期："+parseDate(mistakeQuestions[i].questionDate)+"</div>\n" +
+									"\t\t\t\t\t\t\t\t\t<div>时间："+parseDate(mistakeQuestions[i].questionDate)+"</div>\n" +
 									"\t\t\t\t\t\t\t\t\t<div>知识点："+map[mistakeQuestions[i].knowledgePoint]+"</div>\n" +
 									"\t\t\t\t\t\t\t\t\t<button href=\"#\" class=\"status1\">移出错题集</button></div>\n" +
 									"\t\t\t\t\t\t\t</li>";
@@ -125,7 +125,9 @@
 			var year = date.year + 1900;
 			var month = date.month + 1;
 			var day = date.date;
-			return year+"-"+month+"-"+day;
+			var hour = date.hours;
+			var minute = date.minutes;
+			return year+"-"+month+"-"+day+" "+hour+":"+minute;
 		}
 
 	</script>

@@ -6,6 +6,7 @@ import priv.tiba.dao.RecordDao;
 import priv.tiba.pojo.Record;
 import priv.tiba.service.RecordService;
 
+import java.sql.Timestamp;
 import java.util.Date;
 
 @Service("recordService")
@@ -20,7 +21,7 @@ public class RecordServiceImpl implements RecordService {
         record.setQuestionAmount(questionAmount);
         record.setRightAmount(rightAmount);
         record.setRightRate(rightAmount*1.0/questionAmount);
-        record.setRecordDate(new Date());
+        record.setRecordDate(new Timestamp((new Date()).getTime()));
         record.setUserId(userId);
         return recordDao.createNewRecord(record);
     }

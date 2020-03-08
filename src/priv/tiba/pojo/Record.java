@@ -1,11 +1,20 @@
 package priv.tiba.pojo;
 
-import java.util.Date;
+import java.sql.Timestamp;
 
 public class Record {
     private int recordId;
     private int questionAmount;
-    private Date recordDate;
+
+    public Timestamp getRecordDate() {
+        return recordDate;
+    }
+
+    public void setRecordDate(Timestamp recordDate) {
+        this.recordDate = recordDate;
+    }
+
+    private Timestamp recordDate;
     private int rightAmount;
 
     public int getRecordId() {
@@ -22,14 +31,6 @@ public class Record {
 
     public void setQuestionAmount(int questionAmount) {
         this.questionAmount = questionAmount;
-    }
-
-    public Date getRecordDate() {
-        return recordDate;
-    }
-
-    public void setRecordDate(Date recordDate) {
-        this.recordDate = recordDate;
     }
 
     public int getRightAmount() {
