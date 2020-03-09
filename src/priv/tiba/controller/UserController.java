@@ -68,6 +68,8 @@ public class UserController {
             model.addAttribute("msg", "邮箱已注册！");
         }else if(!password1.equals(password2)){
             model.addAttribute("msg", "两次密码不一致！");
+        }else if(password1.length() < 6){
+            model.addAttribute("msg", "密码长度不得短于6位！");
         }else{
             userService.addUser(userId, password1);
             model.addAttribute("msg", "注册成功！");
