@@ -7,7 +7,7 @@ import priv.tiba.pojo.Record;
 import priv.tiba.service.RecordService;
 
 import java.sql.Timestamp;
-import java.util.Date;
+import java.util.*;
 
 @Service("recordService")
 public class RecordServiceImpl implements RecordService {
@@ -25,4 +25,14 @@ public class RecordServiceImpl implements RecordService {
         record.setUserId(userId);
         return recordDao.createNewRecord(record);
     }
+
+    @Override
+    public Map<String, Object> getRecordByTime(String userId, String type1, String type2) {
+        Map<String, Object> map = new HashMap<>();
+        List<String> xList = new ArrayList<>();
+        List<String> yList = new ArrayList<>();
+        return map;
+    }
+
+
 }
