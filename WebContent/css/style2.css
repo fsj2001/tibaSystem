@@ -340,6 +340,32 @@ label.check {
     transform: translateY(5px);
 }
 
+#login,#register{
+    color: #ffffff;
+    font-weight: 100;
+    width: 100%;
+    padding: 0.4em 0;
+    font-size: 1em;
+    font-weight: 400;
+    letter-spacing: 2px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: #000;
+    font-family: 'Catamaran', sans-serif;
+    transition: 0.5s all ease;
+    -webkit-transition: 0.5s all ease;
+    -moz-transition: 0.5s all ease;
+    -o-transition: 0.5s all ease;
+    -ms-transition: 0.5s all ease;
+}
+
+#login:hover,#register:hover{
+    color: #fff;
+    box-shadow: 0 20px 5px -10px rgba(0, 0, 0, 0.4);
+    transform: translateY(5px);
+}
+
 .w3ls-bot {
     margin-top: 1em;
     width: 100%;

@@ -272,7 +272,6 @@
             }
         });
 
-
         $('#submitAnswer').click(function () {
             var tag=1;
             for(var k=0;k<questionList.length;k++){
@@ -322,8 +321,6 @@
                     that.text('已放入错题集');
                 }
             })
-
-
         })
 
         function getAnswer() {

@@ -12,5 +12,8 @@ public interface UserDao {
     public int addUser(User user);
 
     //修改用户信息
-    public int modifyUser(@Param("userId") String userId, @Param("password") String password);
+    public int modifyUser(String userId, String password);
+
+    //查找用户数量
+    public int getUserAmount(String userId);
 }

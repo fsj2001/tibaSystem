@@ -5,6 +5,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 import priv.tiba.pojo.User;
 import priv.tiba.service.UserService;
 
@@ -59,5 +60,19 @@ public class UserController {
         }
         model.addAttribute("msg", "原密码错误！");
         return "modify_password";
+    }
+
+    @RequestMapping(value = "/register.action", method = RequestMethod.POST)
+    public String register(String userId, String password1, String password2, Model model){
+        if(userService.getUsersAmount(userId) > 0){
+            model.addAttribute("msg", "邮箱已注册！");
+        }else if(!password1.equals(password2)){
+            model.addAttribute("msg", "两次密码不一致！");
+        }else{
+            userService.addUser(userId, password1);
+            model.addAttribute("msg", "注册成功！");
+        }
+
+        return "login";
     }
 }

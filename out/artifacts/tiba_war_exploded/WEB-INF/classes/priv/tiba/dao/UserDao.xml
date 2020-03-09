@@ -14,4 +14,8 @@
     <update id="modifyUser" parameterType="String">
         update tbl_user set password = #{password} where userid = #{userId}
     </update>
+
+    <select id="getUserAmount" parameterType="String" resultType="int">
+        select count(*) from tbl_user where userId = #{userId}
+    </select>
 </mapper>
