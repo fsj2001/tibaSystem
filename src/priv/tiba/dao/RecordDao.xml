@@ -7,11 +7,7 @@
         values(#{questionAmount}, #{recordDate}, #{rightAmount}, #{rightRate}, #{userId})
     </insert>
 
-    <select id="getRecordByTime" resultType="record">
-        select * from tbl_record where userid = #{userId} order by recorddate desc limit #{recordNum}
-    </select>
-
-    <select id="getRecordByDay" parameterType="String" resultType="record">
+    <select id="getRecord" parameterType="String" resultType="record">
         select * from tbl_record where userid = #{userId} order by recorddate desc
     </select>
 </mapper>

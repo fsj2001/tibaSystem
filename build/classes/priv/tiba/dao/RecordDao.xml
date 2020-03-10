@@ -6,4 +6,8 @@
         insert into tbl_record(questionamount, recorddate, rightamount, rightrate, userid)
         values(#{questionAmount}, #{recordDate}, #{rightAmount}, #{rightRate}, #{userId})
     </insert>
+
+    <select id="getRecord" parameterType="String" resultType="record">
+        select * from tbl_record where userid = #{userId} order by recorddate desc
+    </select>
 </mapper>

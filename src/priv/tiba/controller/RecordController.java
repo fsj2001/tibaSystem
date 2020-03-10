@@ -27,9 +27,9 @@ public class RecordController {
     }
 
     @ResponseBody
-    @RequestMapping(value = "/getRecord.action", method = RequestMethod.POST)
-    public Map<String, Object> getRecord(@RequestBody Map<String, Object> jsonData, HttpSession session){
-        Map<String, Object> map = new HashMap<>();
+    @RequestMapping(value = "/getRecord.action", method = RequestMethod.GET)
+    public Map<String, Object> getRecord(HttpSession session){
+        Map<String, Object> map = recordService.getRecord(((User)session.getAttribute("USER_SESSION")).getUserId());
         return map;
     }
 }
