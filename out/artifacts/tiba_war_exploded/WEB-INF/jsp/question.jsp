@@ -324,6 +324,7 @@
         })
 
         function getAnswer() {
+            $('#submit-answer').hide()
             var rightAmount = 0;
             for(var i=0;i<questionList.length;i++){
                 var answer="(空)";
@@ -363,6 +364,8 @@
                     D['qu_1_'+i] = answer;
                 }
             }
+
+            alert('题目总数：'+questionList.length+'\n答对题数：'+rightAmount+'\n准确率：'+(rightAmount*100.0/questionList.length)+'%')
 
             var postData = {
                 questionAmount:questionList.length,
